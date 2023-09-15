@@ -22,11 +22,11 @@ def welcome_assignment_answers(question):
     elif question == "Is MD5 a secured hashing algorithm? - Yes/No":
         answer = "No"
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-        num = '4'
-        answer = int(num)
+        answer = "4"
+        #answer = int(num)
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
-        ans = 2
-        answer = int(ans)
+        #ans = 2
+        answer = 2
     else: 
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?
@@ -63,7 +63,8 @@ if __name__ == "__main__":
     print(welcome_assignment_answers(debug_question))
     
     debug_question = "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number"
-    print(welcome_assignment_answers(debug_question))
+    con = int (welcome_assignment_answers(debug_question))
+    print(con)
     
     debug_question = "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number"
     print(welcome_assignment_answers(debug_question))

@@ -17,17 +17,14 @@ def welcome_assignment_answers(question):
         answer = "Yes"
     elif question == "Is a hashed message supposed to be un-hashed? - Yes/No":
         answer = "No"
-    
     elif question == "What is the SHA256 hashing value of your NYU email and use the answer in your code - ":
         answer = "0D0B7C61CB2FC1F81EA49CA221D2CDA4747988802B203E55FEA77228816BAB72"
-    
     elif question == "Is MD5 a secured hashing algorithm? - Yes/No":
         answer = "No"
-        
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
         answer = "4"
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
-        answer = "3"
+        answer = "2"
     else: 
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?

@@ -22,7 +22,7 @@ def welcome_assignment_answers(question):
     elif question == "Is MD5 a secured hashing algorithm? - Yes/No":
         answer = "No"
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-        answer = int('4')
+        answer = int("4")
         #answer = int(num)
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
         answer = int(2)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     print(welcome_assignment_answers(debug_question))
     
     debug_question = "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number"
-    print((welcome_assignment_answers(debug_question)))
+    print(welcome_assignment_answers(debug_question))
         
     debug_question = "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number"
     print(welcome_assignment_answers(debug_question))

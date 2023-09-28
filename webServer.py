@@ -49,7 +49,7 @@ def webServer(port=13331):
                     response_headers_string += "Server: MyWebServer\r\n"
                     response_headers_string += "Connection: close\r\n"
                     #response_headers_string += "Content-Type: text/html; charset=UTF-8\r\n"
-                    response_headers_string += "Content-Type: text/plain; charset=us-ascii\r\n"
+                    response_headers_string += "Content-Type: text/html\r\n"
                     response_headers_string += f"Content-Length: {len(f_data_CON)}\r\n\r\n"
                     #html body content found in message  -> "text/plain; charset=us-ascii"
                     # Send the headers

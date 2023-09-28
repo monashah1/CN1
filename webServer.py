@@ -68,8 +68,7 @@ def webServer(port=13331):
             print("Error:", e)
 
 
-if __name__ == "__main__":
-    webServer(13331)   
+ 
            #Send one HTTP header line into socket
            #connectionSocket.send('HTTP/1.1 200 OK\r\n\r\n'.encode())  
            # 200 http OK message
@@ -97,6 +96,6 @@ if __name__ == "__main__":
    #serverSocket.close()
    #sys.exit()  # Terminate the program after sending the corresponding data
 
-#if __name__ == "__main__":
-#   webServer(13331)
+if __name__ == "__main__":
+   webServer(13331)
 

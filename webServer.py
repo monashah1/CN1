@@ -49,7 +49,7 @@ def webServer(port=13331):
                     response_headers_string += "Server: MyWebServer\r\n"
                     response_headers_string += "Connection: close\r\n"
                     response_headers_string += "Content-Type: text/html; charset=UTF-8\r\n"
-                    response_headers_string += f"Content-Length: {len(f_data_CON)}\r\n\r\n"
+                    response_headers_string += "Content-Length: {len(f_data_CON)}\r\n\r\n"
 
                     # Send the headers
                     connectionSocket.send(response_headers_string.encode())

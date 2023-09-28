@@ -49,7 +49,7 @@ def webServer(port=13331):
                     response_headers_string += "Server: MyWebServer\r\n"
                     response_headers_string += "Connection: close\r\n"
                     #response_headers_string += "Content-Type: text/html; charset=UTF-8\r\n"
-                    response_headers_string += "Content-Type: text/html\r\n"
+                    response_headers_string += "Content-Type: text/html\n\n"
                     response_headers_string += f"Content-Length: {len(f_data_CON)}\r\n\r\n"
                     #html body content found in message  -> "text/plain; charset=us-ascii"
                     # Send the headers
@@ -63,6 +63,7 @@ def webServer(port=13331):
                     not_found_response = "HTTP/1.1 404 Not Found\r\n"
                     not_found_response += "Server: MyWebServer\r\n"
                     not_found_response += "Connection: close\r\n\r\n"
+                    not_found_response += "<html><body><center><h3>Error 404: File not found</h3><p>Python HTTP Server</p></center></body></html>".encode('utf-8')
                     connectionSocket.send(not_found_response.encode())
 
             else:
